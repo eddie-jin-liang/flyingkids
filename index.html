@@ -16,18 +16,23 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar">
-        <a href="#home" class="logo" style="display: flex; align-items: center;">
-            <img src="logo.png" alt="FlyingKids Logo"
-                style="height: 100px; margin-right: 15px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));">
+    <nav class="navbar" aria-label="Main navigation">
+        <a href="#home" class="logo">
+            <img src="logo.png" alt="FlyingKids Logo">
             FlyingKids Art Studio
         </a>
-        <ul class="nav-links">
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation"
+            aria-label="Open navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links" id="primary-navigation">
             <li><a href="#about">About</a></li>
             <li><a href="#classes">Classes</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-        <a href="#classes" class="btn btn-small">Join Now</a>
+        <a href="#classes" class="btn btn-small navbar-cta">Join Now</a>
     </nav>
 
     <!-- Hero Section -->
